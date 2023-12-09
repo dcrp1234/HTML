@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded URL</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        iframe {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ways of embedding Asymptote generated output into web pages</h1>
+    
+    <h2> For 2D output: </h2>
+
+    <p>In .png format:</p>
+    <img src="png.png" width = "400" height= "300" alt="Embedded PNG"><br><br>
+
+    <p>In .svg format: </p>
+    <svg width="400" height="300">
+        <image xlink:href="svg.svg" width="100%" height="100%" />
+    </svg>
+    <p>Eps files can be embeded into webpages after conversion to svg.</p><br>
+
+    <p>To embed pdf files:</p>
+    <iframe src="pdf.pdf" width="400" height="300"></iframe><br>
+   
+    <h2> For 3D output: </h2>
+   
+    <p>To view the image in a new tab, the HTML for the image has been provided as the link:
+    <a href="workspace(7).html" target="_blank">For the interactive image click here</a><br></p>
+
+    <p>To show the 3D interactive image embedded in the webpage using iframe tag: </p>
+    <iframe src="workspace(7).html" width="600" height="500"></iframe>
+   
+    <p> Image and code credit: 
+    <a href=" https://bookdown.org/yihui/rmarkdown-cookbook/eng-asy.html">R Markdown Cookbook</a> <br>
+    </p>
+</body>
+</html>
